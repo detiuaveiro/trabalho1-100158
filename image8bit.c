@@ -172,6 +172,18 @@ Image ImageCreate(int width, int height, uint8 maxval) { ///
   assert (height >= 0);
   assert (0 < maxval && maxval <= PixMax);
   // Insert your code here!
+
+
+  //O array É apenas uma linha (AS LINHAS DA IMAGEM ESTÃO SEGUIDAS UMAS ÀS OUTRAS)
+
+
+  for (int i = 0; i<width; i++){
+    for (int j = 0; j<height; j++){
+      pixel[i] = 0;// ?????????????????????????????????????????????????? Não sei se isto está bem (É óbvio que está mal)
+    }
+  }
+
+
 }
 
 /// Destroy the image pointed to by (*imgp).
